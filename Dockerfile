@@ -26,5 +26,5 @@ RUN apk --no-cache add --virtual runtime-dependencies \
 
 COPY --from=builder /opt/openocd/ /opt/openocd/
 
-ENV PATH $PATH:/opt/openocd
+ENV PATH $PATH:/opt/openocd/bin/
 
